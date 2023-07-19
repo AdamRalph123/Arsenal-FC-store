@@ -5,26 +5,32 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=Home_Kit" id="Home_Kit" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=Home_Kit" id="Home Kit" aria-haspopup="true" aria-expanded="false">
                 Home Kit
             </a>
+        
 
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="Away Kit" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=Away_Kit" id="Away Kit" aria-haspopup="true" aria-expanded="false">
                 Away Kit
             </a>
 
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="Retro Kit" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=Retro_Kit" id="Retro Kit" aria-haspopup="true" aria-expanded="false">
                 Retro Kit
+            </a>
+
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=Accessories" id="Retro Kit" aria-haspopup="true" aria-expanded="false">
+                Accessories
             </a>
 
         <li class="nav-item dropdown">
