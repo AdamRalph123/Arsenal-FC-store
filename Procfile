@@ -1,1 +1,1 @@
-web: gunicorn Arsena_-FC_store.wsgi:application
+web: gunicorn Arsenal_FC_store.wsgi:application
