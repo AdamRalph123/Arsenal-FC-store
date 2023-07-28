@@ -1,0 +1,15 @@
+{ % extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container my-auto text-center">
+    <h1 class="my-5 text-black">
+        An error has occured...
+    </h1>
+    <p>We are working on it and will be back soon ...</p>
+    <div class="my-5">
+        <a href="{% url 'home' %}" class="text-decoration-none category-badge">
+            Back Home <i class="fas fa arrow-alt-circle-left" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>
+{% endblock %}
