@@ -20,6 +20,7 @@ class ProductForm(forms.ModelForm):
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-black rounded-0'
 
+
 class CommentForm(forms.ModelForm):
     """
     Create a customer comment forms
