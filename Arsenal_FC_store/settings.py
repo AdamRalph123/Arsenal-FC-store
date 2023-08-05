@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-x)vn-w_0e$+h-e5=6m#*d=s4v9%&+%x9bhy)7int(8%jkr*o)('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [ 'arsenal-fc-store-9dd3251c1b46.herokuapp.com', 'localhost']
 
