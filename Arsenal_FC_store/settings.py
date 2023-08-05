@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-x)vn-w_0e$+h-e5=6m#*d=s4v9%&+%x9bhy)7int(8%jkr*o)(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['Arsenal-FC-store.herokuapp.com', '8000-adamralph12-arsenalfcst-gwe2kdquwux.ws-eu102.gitpod.io', 'localhost']
+ALLOWED_HOSTS = [ 'arsenal-fc-store-9dd3251c1b46.herokuapp.com', 'localhost']
 
 
 # Application definition
