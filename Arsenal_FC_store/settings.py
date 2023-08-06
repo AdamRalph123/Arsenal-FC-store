@@ -33,7 +33,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = [ 'arsenal-fc-store-9dd3251c1b46.herokuapp.com', 'localhost']
 
-
 # Application definition
 
 INSTALLED_APPS = [
