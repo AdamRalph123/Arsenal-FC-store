@@ -29,5 +29,5 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-handler404 = 'arsenal_fc_store.views.handler404'
-handler404 = 'arsenal_fc_store.views.handler500'
+handler404 = 'Arsenal_FC_store.views.handler404'
+handler404 = 'Arsenal_FC_store.views.handler500'
