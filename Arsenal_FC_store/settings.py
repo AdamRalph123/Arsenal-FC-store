@@ -29,11 +29,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = [ '8000-adamralph12-arsenalfcst-gwe2kdquwux.ws-eu102.gitpod.io','localhost']
+ALLOWED_HOSTS = ['arsenal-fc-store-9dd3251c1b46.herokuapp.com' ,'localhost']
 
-'arsenal-fc-store-9dd3251c1b46.herokuapp.com' 
 # Application definition
 
 INSTALLED_APPS = [
