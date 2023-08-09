@@ -15,7 +15,7 @@ body {
     opacity: .8;
 }
 
-.display-4 logo-font text-white  {
+.display-8  {
     background-color: rgba(255, 0, 0, 0.767);
     opacity: .8;
     text-align: center;
@@ -303,8 +303,8 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 
-    .display-4 logo-font text-white {
-        font-size: 1.5rem;
+    .display-8 {
+        font-size: 1rem;
     }
 
     .nav-link {
