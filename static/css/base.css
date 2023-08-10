@@ -193,6 +193,10 @@ input[name='q']::placeholder {
     width: 600px;
 }
 
+.privacy-text {
+    text-align: justify;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
