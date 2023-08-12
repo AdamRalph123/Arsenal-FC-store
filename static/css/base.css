@@ -8,6 +8,7 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+   
 }
 
 #delivery-banner {
@@ -199,6 +200,12 @@ input[name='q']::placeholder {
 
 footer {
     overflow-x: hidden;
+}
+
+.contact-map {
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
 }
 
 /* -------------------------------- Media Queries */
