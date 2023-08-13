@@ -10,4 +10,3 @@ class TicketAdmin(admin.ModelAdmin):
 
     def mark_seen(self, request, queryset):
         queryset.update(seen=True)
-
