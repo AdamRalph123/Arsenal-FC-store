@@ -7,8 +7,8 @@ from django.conf import settings
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
-from .models import Ticket
 from .forms import ContactForm
+from .models import Ticket
 
 
 def contact(request):
@@ -71,7 +71,7 @@ class ViewOpenTickets(LoginRequiredMixin, UserPassesTestMixin, View):
         page_num = request.GET.get('page')
         tickets = paginator.get_page(page_num)
 
-        open_tickets_count = open_tickets.count()
+        open_ticket_count = open_tickets.count()
 
         context = {
             'open_tickets': tickets,
@@ -82,6 +82,7 @@ class ViewOpenTickets(LoginRequiredMixin, UserPassesTestMixin, View):
 
     def test_func(self):
         return self.request.user.is_superuser
+
 
 class CloseTicket(LoginRequiredMixin, View):
     """

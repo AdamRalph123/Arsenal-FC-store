@@ -1,3 +1,4 @@
+from .models import Ticket
 from django import forms
 
 
@@ -7,4 +8,5 @@ class ContactForm(forms.ModelForm):
     form using ticket model
     """
     class Meta:
+        model = Ticket
         fields = ('name', 'email', 'message',)
