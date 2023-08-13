@@ -35,12 +35,12 @@ def contact_form(request):
                 'contact/contact_form_confirmation_subject.txt')
             body = render_to_string(
                 'contact/contact_form_confirmation_body.txt',
-                {'contact_email': settings.DEFAULT_FORM_EMAIL})
+                {'contact_email': settings.DEFAULT_FROM_EMAIL})
 
             send_mail(
                 subject,
                 body,
-                settings.DEFAULT_FORM_EMAIL,
+                settings.DEFAULT_FROM_EMAIL,
                 [user_email]
             )
 
