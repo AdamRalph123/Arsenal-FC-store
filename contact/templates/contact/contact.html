@@ -16,6 +16,19 @@
 {% endblock %}
 
 {% block content %}
+<div class="overlay"></div>
+<div class="container">
+    {% for pvc in privacy %}
+    <div class="row my-5">
+        <h2 class="text-center">{{ pvc.title }}</h2>
+    </div>
+    <div class="row justify-text">
+        <div class="col-8">
+            <p class="privacy-text">{{ pvc.privacy_policy }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
 <section class="position-relative py-5">
     <div class="d-md-none"><iframe class="contact-map" allowfullscreen
             src="https://cdn.bootstrapstudio.io/placeholders/map.html"></iframe></div>
