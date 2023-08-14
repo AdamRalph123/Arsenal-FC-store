@@ -8,6 +8,10 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="description" content="Arsenal FC store where you can buy Arsenal home, away, retro jerseys and also accessories.">
+        <meta name="keywords" content="Arsenal FC, football, premier league, english football, jerseys, accessories, gunners,online store">
+        <meta name="author" content="Adam Ralph">
     {% endblock %}
 
     {% block extra_meta %}
@@ -73,6 +77,7 @@
                           {% if request.user.is_authenticated %}
                               {% if request.user.is_superuser %}
                                   <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                                  <a href="{% url 'open_tickets' %}" class="dropdown-item">View Open Tickets</a>
                               {% endif %}
                               <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                               <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>

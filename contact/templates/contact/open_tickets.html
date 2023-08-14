@@ -11,10 +11,25 @@
 </div>
 {% endblock %}
 
+
 {% block content %}
+<div class="overlay"></div>
+<div class="container">
+    {% for pvc in privacy %}
+    <div class="row my-5">
+        <h2 class="text-center">{{ pvc.title }}</h2>
+    </div>
+    <div class="row justify-text">
+        <div class="col-8">
+            <p class="privacy-text">{{ pvc.privacy_policy }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
 <div class="container py-4 py-xl-5">
     {% if open_tickets %}
-    <h1 class="logo-font text-center pb-3 text-yellow ">{{ open ticket_count}} Open Ticket{% if open_ticket_count > 1%}s{% endif %}</h1>
+    <h1 class="logo-font text-center pb-3 text-yellow">{{ open_ticket_count }} Open Ticket{% if open_ticket_count > 1 %}s{% endif %}</h1>
     <div class="row">
         {% for ticket in open_tickets %}
         <div class="col-md-8 mx-auto">
@@ -41,6 +56,7 @@
         <ul class="pagination justify-content-center">
             {% if open_tickets.has_previous %}
             <li class="page-item"><a href="?page{{ open_tickets.previous_page_number }}" class="btn btn-outline-black">Newer Tickets</a></li>
+            {% endif %}
 
             {% if open_tickets.has_next %}
             <li class="page-item"><a href="?page{{ open_tickets.next_page_number }}" class="btn btn-outline-black">Older Tickets</a></li>
@@ -51,5 +67,6 @@
 
     {% else %}
     <h1 class="logo-font text-center text-yellow">No Open Tickets</h1>
+    {% endif %}
 </div>
 {% endblock %}

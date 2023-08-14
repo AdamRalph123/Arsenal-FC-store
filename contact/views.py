@@ -21,6 +21,7 @@ def contact(request):
     }
     return render(request, 'contact/contact.html', context)
 
+
 def contact_form(request):
     """ Handle contact form """
     if request.method == 'POST':
@@ -57,17 +58,18 @@ def contact_form(request):
 
     return render(request, template, context)
 
+
 class ViewOpenTickets(LoginRequiredMixin, UserPassesTestMixin, View):
     """
     Display all open tickets in a list
     only accessible by admin
     """
     def get(self, request, *args, **kwargs):
-        
-        open_tickets = Ticket.objects.filter(
-            seen=False).order_by('-sent')
 
-        paginator = paginator(open_tickets, 5)
+        open_tickets = Ticket.objects.filter(
+            seen=False).order_by('-sent_at')
+
+        paginator = Paginator(open_tickets, 5)
         page_num = request.GET.get('page')
         tickets = paginator.get_page(page_num)
 
@@ -98,8 +100,6 @@ class CloseTicket(LoginRequiredMixin, View):
             messages.info(request, 'Ticket closed!')
         else:
             messages.error(request, 'Error!')
-        
+
         next = request.POST.get('next', '/')
         return HttpResponseRedirect(next)
-
-
