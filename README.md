@@ -377,8 +377,160 @@ I found https://dbschema.com/download.html did a great job for documenting my da
 - [MailChimp](https://mailchimp.com/) was used for the subscribe secton in the footer.
 
 
+## Agile developemnt 
+
+[GitHub Projects](https://github.com/AdamRalph123/Arsenal-FC-store/projects?query=is%3Aopen) served as an agile tool for this project. User stories were used to map out the development progress of this project, It helped me to understand what was nedded to be done and what was done.
+
+![screenshot](docs/project-and-issues/project-board.png)
+
+### GitHub issues
+
+![Open issues](docs/project-and-issues/wont-have.png) has a label of **Wont have** as these issues will be implemented in the future.
+
+![Closed issues](docs/project-and-issues/issues-closed-1.png)
+![Closed issues](docs/project-and-issues/issues-closed-2.png)
+![Closed issues](docs/project-and-issues/issues-closed-3.png)
+ has labaels of **Must have** and **Should have** which is what the site must contain and what the site should contain.
 
 
+ ### MoSCow prioritization
+
+- **Must have**: The 'MUST' level requirements are those requirements which will definitely be included to be delivered.
+- **Should have**: The 'SHOULD' level requirements are those requirements which should be included if at all possible. If the project has capacity and time and it will not jeopardise any of the 'must have' requirements.
+- **Could have**: The 'COULD' level requirements are the requirements which could be included if it doesnt have any impact on any of the 'should' or 'must' requirements.
+- **Wont have**: The 'WONT' level requirements tend to be the requirements which will not be  included or implemented this time but are requirements that would be favoured for a future delivery or implementation.
+
+
+## Facebook page
+
+I made a facebook page for my online store and included some screenshots of activity.
+
+![screenshot](docs/facebook/facebook-page-overview.png)
+![screenshot](docs/facebook/facebook-page-info.png)
+![screenshot](docs/facebook/facebook-page.png)
+
+![screenshot](docs/facebook/facebook-post.png)
+
+## Testing
+
+For all testing, please refer to the [TESTING.md](TESTING.md) file.
+
+
+## Bugs
+
+There was not any major bugs while working on this site, some were just simple spelling mistakes, which would cause a certain page to not open.
+
+I did have issues with the deployment and connecting the database as I kept getting errors which is why there is a lot commits messages.
+
+
+## Deployment 
+
+The live deployed application can be found on [Heroku](https://git.heroku.com/car-talk-blog.git).
+
+### ElpephantSQL 
+
+This project uses [ElephantSQL](https://www.elephantsql.com/) for postgreSQL database.
+
+To obtain your own Postgres database, sign-up with your GitHub account, then follow these steps:
+- Click **Create new instance** to start a new database.
+- Provide a name, this is commonly the name of your project.
+- Select the **Ting turtle plan** as this is free.
+- You can leave the **tags** blank.
+- Select the **Region** and **Data center** closest to you.
+- Once created, you can click on the nee database name where you can view the database URL and password.
+
+### Heroku Deployment
+
+This project uses [Heroku](https://www.heroku.com/), a platform as a service that enables developers to build, run and operate applications entirely in the cloud.
+
+- Select **new** in the top-right hand corner in your heroku dashboard and select **create new app** from the dropdown menu.
+- Your app name must be unique, then choose the region closest to you, then slect **create app**.
+- From the new app settings, click **reveal config vars** ans set your enviroment variables.
+
+| Key | Value |
+| --- | --- |
+| `AWS_ACCESS_KEY_ID` | Insert your own API key here. |
+| `DATABASE_URL` | insert your own ElephantSQL database url here. |
+| `DISABLE_COLLECTSTATIC` | 1 (*this is temporary and can be removed on your final deployment*) |
+| `SECRET_KEY` | This can be any random secret key. |
+| `AWS_SECRET_ACCESS_KEY` | Insert your own API key here. | |
+| `EMAIL_HOST_PASS` | Insert your own API key here. | |
+| `EMAIL_HOST_USER` | Insert your own email here. | |
+| `STRIPE_PUBLIC_KEY` | Insert your own API key here. | | | |
+| `STRIPE_SECRET_KEY` | Insert your own API key here. | | | |
+| `STRIPE_WH_SECRET` | Insert your own API key here. | | | |
+| `USE_AWS` | Set to true. | | | |
+
+
+Heroku needs two additional files in order to deploy properly.
+- requirements.txt file.
+- Procfile.
+
+You can install this projects ** requirements** using:
+- `pip3 install -r requirements.txt`
+
+If you have your own package that have been installed , then the requirements file needs updating using:
+- `pip3 freeze --local > requirements.txt`
+
+The **profile** can be created with the following command:
+- `echo web: gunicorn app_name.wsgi > Profile`
+- Make sure to replace 'app_name' with the name of your **own** app name.
+
+For Heroku deployment, follow these steps to deploy your site:
+
+- **Automatic** select 'enable automatic deployment'.
+- **Manual deployment** can be done by:
+    - By typing `heroku login -i` in the terminal.
+    - Set the remote for heroku: `heroku git:remote -a app_name` replace 'app_name' with your own app name.
+
+### Cloning 
+
+You can clone this repository by follwoing these steps:
+
+- Go to the [GitHub repository](https://github.com/AdamRalph123/Car-talk-blog).
+- Locate the code button above the list of files and click it.
+- Select if you prefer to clone using HTTPS, SSH or GitHub CLI and click copy button to copy the URL to your clipboard.
+- Open Git bash or Terminal.
+- Chanhe the current working directory to the one you the clonned directory.
+- In your IDE terminal, type the following command to clone the repository: `git clone https://github.com/AdamRalph123/Car-talk-blog`.
+- Press enter to create your clone.
+
+### Forking
+
+By forking this GitHub repository, you make a copy of the original repository on your GitHub account to view or makw chnages to it without affecting the ownders repository.
+
+Follow these steps to fork this repository:
+
+- Login into GitHub and locate [GitHub repository](https://github.com/AdamRalph123/Car-talk-blog).
+- At the top of the repository Just above the **settings** button on the menu, locate the **fork** button.
+- Once clicked, you should now have a copy of the original repository in your own GitHub account.
+
+
+## Credits
+
+I would like to credit [Code Institute](https://codeinstitute.net/) for allowing us to use the *Boutique ado* practice project as a base to our own blog.
+
+### Content
+
+| Source | Location | Notes |
+| --- | --- | --- |
+| [Privacy Policy Generator](https://www.privacypolicygenerator.info/) | Privacy | to create the privacy policy page. |
+| [Football Kit Archive](https://www.footballkitarchive.com/) | base.html, index.html, post detail.html and uploading posts | was used for downloading images that was used to upload to my store. |
+| [Bootstrap](https://getbootstrap.com/) | All html pages, contact form | was used for the front-end CSS framework responsiveness and pre-built components, contatc form too. |
+| [Footer](https://mdbootstrap.com/docs/standard/extended/social-media-icons-footer/) | base.html | was used for creating my footer. |
+| [Arsenal official website](https://arsenaldirect.arsenal.com/) | For all my accessories images. |
+| [Google mapp](https://www.google.com/maps) | footer.html | for the map on my footer page.
+| [Mailchimp](https://mailchimp.com/) | footer.html | for the subscribe section.
+
+
+
+ ##  Acknowledgement
+ I would like to thank:
+ 
+ - My mentor Jubril Akolade who is always there for support and to answer any questions i have for him.
+ - I would like to thank [Code Institute](https://codeinstitute.net/) student support for always helping me to solove my errors.
+ - The [Slack](https://slack.com/intl/en-ie/https://slack.com/intl/en-ie/) community which i can always rely on.
+ - I would like to thank the assessment team for taking their time to look over my project.
 
 
 
