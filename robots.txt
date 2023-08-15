@@ -1,3 +1,4 @@
 User-agent: *
-Disallow:
-Sitemap: https://arsenal-fc-store-9dd3251c1b46.herokuapp.com/
+Disallow: /accounts/
+Disallow: /checkout/
+Sitemap: https://arsenal-fc-store-9dd3251c1b46.herokuapp.com/sitemap.xml
