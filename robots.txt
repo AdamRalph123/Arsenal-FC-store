@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://arsenal-fc-store-9dd3251c1b46.herokuapp.com/
