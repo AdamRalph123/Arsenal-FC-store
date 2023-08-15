@@ -335,7 +335,18 @@ These are some of features which can be implemented in the future. These feature
 - FAQ
     - I would like to add a feature which allows users to views Faqs.
 
+## Emails and toasts
 
+![screenshot](docs/testing/confirm-confirmation.png)
+![screenshot](docs/testing/verify-email.png)
+![screenshot](docs/testing/contact-email.png)
+![screenshot](docs/testing/reset-email.png)
+![screenshot](docs/testing/link-confirm-email.png)
+![screenshot](docs/testing/payment-confirmation-email.png)
+![screenshot](docs/testing/product-deleted-confirmation.png)
+![screenshot](docs/testing/review-confirmation.png)
+![screenshot](docs/testing/success-payment.png)
+![screenshot](docs/testing/sign-out-confirmation-message.png)
 ## Model Schema
 
 Two relationsal databases were used to create this site. The builtin django SQLite databse was used for developemnt and Elephant SQL Posrgres for the deployed version.
@@ -371,6 +382,7 @@ I found https://dbschema.com/download.html did a great job for documenting my da
 - [ElphantSQL](https://www.elephantsql.com/) was used as the postgres database.
 - [Heroku](https://www.heroku.com/) was used as hosting the deployed back-end site.
 - [AmazonAWS](https://aws.amazon.com/) was used for online static storage.
+- [stripe](https://stripe.com/ie) was used for the payments.
 - [Balsamiq](https://balsamiq.com/wireframes/) was used for to design my site wireframe.
 - [Google fonts](https://fonts.google.com/) was used for my fonts throughout my site.
 - [Font awesome](https://fontawesome.com/) was used for my icons I used throughout my site.
@@ -410,6 +422,13 @@ I made a facebook page for my online store and included some screenshots of acti
 ![screenshot](docs/facebook/facebook-page.png)
 
 ![screenshot](docs/facebook/facebook-post.png)
+
+
+## Database used 
+
+[ElephantSQL](https://www.elephantsql.com/) was used for deployemnt to heroku.
+
+[Stripe](https://stripe.com/ie) was used for the payments.
 
 ## Testing
 
@@ -508,7 +527,7 @@ Follow these steps to fork this repository:
 
 ## Credits
 
-I would like to credit [Code Institute](https://codeinstitute.net/) for allowing us to use the *Boutique ado* practice project as a base to our own blog.
+I would like to credit [Code Institute](https://codeinstitute.net/) for allowing us to use the *Boutique ado* practice project as a base to our own e commerce store.
 
 ### Content
 
@@ -519,8 +538,9 @@ I would like to credit [Code Institute](https://codeinstitute.net/) for allowing
 | [Bootstrap](https://getbootstrap.com/) | All html pages, contact form | was used for the front-end CSS framework responsiveness and pre-built components, contatc form too. |
 | [Footer](https://mdbootstrap.com/docs/standard/extended/social-media-icons-footer/) | base.html | was used for creating my footer. |
 | [Arsenal official website](https://arsenaldirect.arsenal.com/) | For all my accessories images. |
-| [Google mapp](https://www.google.com/maps) | footer.html | for the map on my footer page.
-| [Mailchimp](https://mailchimp.com/) | footer.html | for the subscribe section.
+| [Google mapp](https://www.google.com/maps) | footer.html | for the map on my footer page. |
+| [Mailchimp](https://mailchimp.com/) | footer.html | for the subscribe section. |
+| [Sitemap.xml](https://www.xml-sitemaps.com/) | sitemap.xml | used to create sitemap |
 
 
 
@@ -530,7 +550,7 @@ I would like to credit [Code Institute](https://codeinstitute.net/) for allowing
  - My mentor Jubril Akolade who is always there for support and to answer any questions i have for him.
  - I would like to thank [Code Institute](https://codeinstitute.net/) student support for always helping me to solove my errors.
  - The [Slack](https://slack.com/intl/en-ie/https://slack.com/intl/en-ie/) community which i can always rely on.
- - I would like to thank the assessment team for taking their time to look over my project.
+ - I would like to thank the assessment team for taking their time to assess my project.
 
 
 
