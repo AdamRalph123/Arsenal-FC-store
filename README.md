@@ -324,6 +324,60 @@ I used [balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
     ![screenshot](docs/features/dropdown-mobile-view.png)
     ![screenshot](docs/features/nav-mobile-view.png)
 
+### Future features
+
+These are some of features which can be implemented in the future. These features have be logged as wont have in my MoSCoW prioritization.
+
+- Discount code
+    - I would like to add a feature which allow users to enter a discount code to get a discount on a product they want.
+- Stock management
+    - I would like add a stock management feature which will show user if a certain product is low on stock or out of stock.
+- FAQ
+    - I would like to add a feature which allows users to views Faqs.
+
+
+## Model Schema
+
+Two relationsal databases were used to create this site. The builtin django SQLite databse was used for developemnt and Elephant SQL Posrgres for the deployed version.
+
+I found https://dbschema.com/download.html did a great job for documenting my database ERD etc.
+
+### User model
+
+- User - the Django Allauth user model containing information such as username and password.
+- Profile - stores a users default delivery information and is connected to the user via a one to one relationship.
+
+![screenshot](docs/features/user-model.png)
+
+### Order model
+
+- Order - a foreign key relationship connects the user to the storage of the complete order data.
+- OrderLineItem - stores the products information for a singlw product purchased on an order. Foreign key relationships connects the product and order.
+
+![screenshot](docs/features/checkout-model.png)
+
+
+## Tools and technologies used
+
+- [HTML](https://en.wikipedia.org/wiki/HTML) was used for the main site content.
+- [CSS](https://en.wikipedia.org/wiki/CSS) was used for the design and layout.
+- [bootstrap](https://getbootstrap.com/) was used for the front-end CSS framework responsiveness and pre-built components.
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used for the user interaction on the site for automatically closing Django messages.
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) was used as the back-end programming language.
+- [GitHub](https://github.com/) was used for secure online code storage.
+- [Gitpo](https://www.gitpod.io/) was used as a cloud-based IDE for development.
+- [Django](https://www.djangoproject.com/) was used as the python framwork for the site.
+- [PostgreSQL](https://www.postgresql.org/) was used as the relational database management.
+- [ElphantSQL](https://www.elephantsql.com/) was used as the postgres database.
+- [Heroku](https://www.heroku.com/) was used as hosting the deployed back-end site.
+- [AmazonAWS](https://aws.amazon.com/) was used for online static storage.
+- [Balsamiq](https://balsamiq.com/wireframes/) was used for to design my site wireframe.
+- [Google fonts](https://fonts.google.com/) was used for my fonts throughout my site.
+- [Font awesome](https://fontawesome.com/) was used for my icons I used throughout my site.
+- [MailChimp](https://mailchimp.com/) was used for the subscribe secton in the footer.
+
+
+
 
 
 
