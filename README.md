@@ -1,108 +1,169 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# __Arsenal FC store - Portfolio Project 5__
+![mockup](docs/testing/responsive.png)
 
-Welcome AdamRalph123,
+Arsenal Fc store is an online store were users can find Arsenal jerseys and accessories.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Users can register an account and buy products, usres can also contact the Araenal Fc store by filling out a contact form.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The aim of this project is to allow users to be able easily shop on the arsenal fc store.
 
-## Gitpod Reminders
+[Live link to website](https://arsenal-fc-store-9dd3251c1b46.herokuapp.com/)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+## UX
 
-A blue button should appear to click: _Make Public_,
+Some of the colours I used when developing this site, I kept the colours simple so it wouldnt distract the users from the site.
 
-Another blue button should appear to click: _Open Browser_.
+- `rgba(255, 0, 0, 0.767)` was used as the delivery banner and the welcome message displayed on the home page. I chose this colour as I thouhgt it represents the Arsenal FC team colour.
+- `#fff` was used for the sign up.
+- `#28a745` was used for some of the arrows seen on this site (bootstrap)
+- `#6c757d` was used for some of the arrows seen on this site (bootstrap)
+- `#dc3545` was used for some of the arrows seen on this site (bootstrap)
+- `#ffc107`  was used for some of the arrows seen on this site (bootstrap)
+- `#17a2b8` was used for some of the arrows seen on this site (bootstrap)
+- `#f8f9fa` was used for some of the arrows seen on this site (bootstrap)
+- `#343a40` was used for some of the arrows seen on this site (bootstrap)
+- `#222` was used for the allauth form inner content
+- `#dc3545` was used for the custom checkout box
+- `#17a2b8` was used for the allauth form inner content (text-info)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+## Typography
 
-Another blue button should appear to click: _Open Browser_.
+- [Lato](https://fonts.google.com/) was used for the site text.
+- [Font Awesome](https://fontawesome.com/) was used for the icons seen throughout the site.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+## User Stories
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Registered users
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- As a first time site visitor I want to clearly be able to see the site's purpose to see if I would want to continue browsing the site. `(MUST HAVE)`
+- As a user I want to clearly be able to navigate the website so I can find what I am looking for. `(MUST HAVE)`
+- As a site user I want to be able to search certain products that I am looking for and to see if they are available on the website. `(SHOULD HAVE)`
+- As a site user I want to be able to view all products by clicking the 'All Products ' link. `(MUST HAVE)`
+- As a site user I want to be able to click on a certain product and to be brought to it's own individual page and to read the description about the product. `(MUST HAVE)`
+- As a site user I want to be able to sort products by category (Home/Away/Accessories) so I can find the right category of what I am looking for. `(SHOULD HAVE)`
+- As a site user I want to be able to add products to my shopping basket so that I can procced to the checkout and purchase them. `(MUST HAVE)`
+- As a site user I want to be able to see the running total amount in my basket as I am shopping so I know how much I am spending. `(MUST HAVE)`
+- As a site user I want to be able to checkout with a card payment so that I can purchase the products I want to buy. `(MUST HAVE)`
+- As a site user I want to be able to receive an order confirmation email after I purchase from the shop so that I have a record of what I have purchased from the shop. `(SHOULD HAVE )`
+- As a site user I want to be able to create an account so that I can save my billing and shipping details and to keep track of all the purchases I've made. `(MUST HAVE)`
+- As a registered user I want to be able to edit my account details so that I can keep my account up to date and make changes if I need to. `(SHOULD HAVE)`
+- As a site user I want to be able to add and remove items in my bag. `(MUST HAVE)`
+- As a site user I want to be able to sign up to the sites mailing list so that I can stay up to date with the latest offers and promotions. `(SHOULD HAVE)`
+- As a site user I want to be able to read the privacy policy so that I can a so I can understand the stores policy. `(SHOULD HAVE)`
+- As a site user I want to be able to fill out a contact form so that I can enquire about a certain product or ask about my order. `(SHOULD HAVE)`
+- As a site user I want to be able to see the prices of the products so I know weather or not I want to purchase the product. `(MUST HAVE)`
 
-------
 
-## Release History
+### Site admin
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- As a site admin I want to be able to create new products from the front end so that I can easily add new products to the site. `(SHOULD HAVE)`
+- As a site admin I want to be able to edit existing products so that I can ensure that all products are up to date and has the correct information. `(SHOULD HAVE)`
+- As a site admin I want to be able to delete certain products that I know longer want on the site. `(SHOULD HAVE)`
+- As a site admin I want to be able to set appropriate keywords on the site pages so that I can increase the chance of customers finding the site when searching for certain products. `(MUST HAVE)`
+- As a site admin I want to be able to view open tickets and also mark as seen and close tickets. `(SHOULD HAVE)`
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Future features
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- As a site user I want to be able to apply a discount code to receive a discount on a product. `(WONT HAVE)`
+- As a site user I want to be able to read an faq page. `(WONT HAVE)`
+- As a site admin I want to be bale to set the stock number on products so that I can let users know if a product is out of stock. `(WONT HAVE)`
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Wireframes
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+I used [balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Home page wireframes
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+<details>
+<summary>Click to view the home page wireframes</summary>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+#### Desktop
+![screenshot](docs/wireframes-and-models/wireframe-homepage-desktop.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+</details>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Basket page wireframe
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+<details>
+<summary>Click to view the basket page wireframes</summary>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+#### Desktop
+![screenshot](docs/wireframes-and-models/wireframe-basket.png)
 
-------
+</details>
 
-## FAQ about the uptime script
+### Basket page wireframe
 
-**Why have you added this script?**
+<details>
+<summary>Click to view the checkout wireframes</summary>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+#### Desktop
+![screenshot](docs/wireframes-and-models/wireframe-checkout.png)
 
-**How will this affect me?**
+</details>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Checkout page wireframe
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+<details>
+<summary>Click to view the checkout wireframes</summary>
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+#### Tablet
+![screenshot](docs/wireframes-and-models/wireframe-checkout-success.png)
 
-**So….?**
+</details>
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Contact page wireframe
 
-**Can I opt out?**
+<details>
+<summary>Click to view the contact page wireframes</summary>
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+#### Mobile
+![screenshot](docs/wireframes-and-models/wireframe-contact-us-mobile.png)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+</details>
 
-**Anything more?**
+### Privacy page wireframe
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+<details>
+<summary>Click to view the privacy page wireframes</summary>
 
----
+#### Mobile
+![screenshot](docs/wireframes-and-models/Privacy-mobile.png)
 
-Happy coding!
+</details>
+
+### Product info page wireframe
+
+<details>
+<summary>Click to view the product info page wireframes</summary>
+
+#### Mobile
+![screenshot](docs/wireframes-and-models/Privacy-mobile.png)
+
+</details>
+
+### Sign up page wireframe
+
+<details>
+<summary>Click to view the sign up page wireframes</summary>
+
+#### Tablet
+![screenshot](docs/wireframes-and-models/wireframe-signup-tablet.png)
+
+</details>
+
+### Sign up page wireframe
+
+<details>
+<summary>Click to view the sign in page wireframes</summary>
+
+#### Desktop
+![screenshot](docs/wireframes-and-models/wireframe-sign-in.png)
+
+</details>
