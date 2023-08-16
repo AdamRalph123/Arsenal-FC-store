@@ -534,10 +534,10 @@ I would like to credit [Code Institute](https://codeinstitute.net/) for allowing
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Privacy Policy Generator](https://www.privacypolicygenerator.info/) | Privacy | to create the privacy policy page. |
-| [Football Kit Archive](https://www.footballkitarchive.com/) | base.html, index.html, post detail.html and uploading posts | was used for downloading images that was used to upload to my store. |
+| [Football Kit Archive](https://www.footballkitarchive.com/) | All jerseys | was used for downloading images that was used to upload to my store and the product description. |
 | [Bootstrap](https://getbootstrap.com/) | All html pages, contact form | was used for the front-end CSS framework responsiveness and pre-built components, contatc form too. |
-| [Footer](https://mdbootstrap.com/docs/standard/extended/social-media-icons-footer/) | base.html | was used for creating my footer. |
-| [Arsenal official website](https://arsenaldirect.arsenal.com/) | For all my accessories images. |
+| [Footer](https://mdbootstrap.com/docs/standard/extended/social-media-icons-footer/) | footer.html | was used for creating my footer. |
+| [Arsenal official website](https://arsenaldirect.arsenal.com/) | product images and background image| For all my accessories images and product description and my background image on the home page. |
 | [Google mapp](https://www.google.com/maps) | footer.html | for the map on my footer page. |
 | [Mailchimp](https://mailchimp.com/) | footer.html | for the subscribe section. |
 | [Sitemap.xml](https://www.xml-sitemaps.com/) | sitemap.xml | used to create sitemap |
@@ -551,6 +551,4 @@ I would like to credit [Code Institute](https://codeinstitute.net/) for allowing
  - I would like to thank [Code Institute](https://codeinstitute.net/) student support for always helping me to solove my errors.
  - The [Slack](https://slack.com/intl/en-ie/https://slack.com/intl/en-ie/) community which i can always rely on.
  - I would like to thank the assessment team for taking their time to assess my project.
-
-
 
